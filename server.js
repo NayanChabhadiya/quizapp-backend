@@ -25,7 +25,12 @@ app.use("/", express.static("./"));
 app.use(
   "/api/v1/",
   require("./src/routes/groupRoutes"),
-  require("./src/routes/userRoutes")
+  require("./src/routes/userRoutes"),
+  require("./src/routes/categoryRoutes"),
+  require("./src/routes/quizRoutes"),
+  require("./src/routes/questionsRoutes"),
+  require("./src/routes/scoreRoutes"),
+  require("./src/routes/feedbackRoutes")
 );
 
 app.listen(Port, Host, () => {

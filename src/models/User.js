@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema(
     contactNumber: { type: Number, required: true },
     username: { type: String, required: true },
     password: { type: String, required: true },
-    groupId: { type: mongoose.Schema.Types.ObjectId },
+    groupId: { type: mongoose.Schema.Types.ObjectId, required: true },
   },
   {
     timestamps: true,

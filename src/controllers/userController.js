@@ -55,7 +55,6 @@ module.exports = {
         }
       }
     } catch (error) {
-      console.log(error);
       res.status(400).json({ success: false, message: "Something went wrong" });
     }
   },

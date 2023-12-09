@@ -7,7 +7,7 @@ const quizSchema = new mongoose.Schema(
     scheduleTime: { type: String, required: true },
     quizDuration: { type: String, required: true },
     totalQuestions: { type: Number, required: true },
-    quizCategoryId: { type: mongoose.Schema.Types.ObjectId, required: true },
+    categoryId: { type: mongoose.Schema.Types.ObjectId, required: true },
     isActive: { type: Boolean, default: true },
   },
   {

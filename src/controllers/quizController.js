@@ -9,7 +9,7 @@ module.exports = {
         scheduleTime,
         quizDuration,
         totalQuestions,
-        quizCategoryId,
+        categoryId,
       } = req.body;
       if (
         !quizTitle ||
@@ -17,7 +17,7 @@ module.exports = {
         !scheduleTime ||
         !quizDuration ||
         !totalQuestions ||
-        !quizCategoryId
+        !categoryId
       ) {
         res
           .status(400)
@@ -29,7 +29,7 @@ module.exports = {
           scheduleTime,
           quizDuration,
           totalQuestions,
-          quizCategoryId,
+          categoryId,
         });
         const quizData = await newQuizData.save();
         if (!quizData) {
@@ -74,7 +74,7 @@ module.exports = {
         scheduleTime,
         quizDuration,
         totalQuestions,
-        quizCategoryId,
+        categoryId,
       } = req.body;
       if (
         !quizTitle ||
@@ -82,7 +82,7 @@ module.exports = {
         !scheduleTime ||
         !quizDuration ||
         !totalQuestions ||
-        !quizCategoryId
+        !categoryId
       ) {
         res
           .status(400)
@@ -94,7 +94,7 @@ module.exports = {
           scheduleTime,
           quizDuration,
           totalQuestions,
-          quizCategoryId,
+          categoryId,
         };
         const quizData = await Quiz.findByIdAndUpdate(
           { _id: quizId },
